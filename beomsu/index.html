@@ -8,11 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h2 id="clock">00:00:00</h2>
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="What is your name?">
         <input type="submit" value="Log In">
     </form>
     <h1 class="hidden" id="greeting"></h1>
-    <script src="app.js"></script>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
