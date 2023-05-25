@@ -9,33 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Gugi&display=swap" rel="stylesheet">
-    <title>달력</title>
+    <title>미정</title>
 </head>
 
 <body>
-    <div class="calendar">
-        <div class="header">
-            <div class="year-month"></div>
-            <div class="nav">
-                <button class="nav-btn prev" onclick="prevMonth()">&lt;</button>
-                <button class="nav-btn go-Today" onclick="goToday()">Today</button>
-                <button class="nav-btn next" onclick="nextMonth()">&gt;</button>
+    <div class="wrapper">
+        <div class="left_content">
+            <div class="calendar">
+                <div class="header">
+                    <div class="year-month"></div>
+                    <div class="nav">
+                        <button class="nav-btn prev" onclick="prevMonth()">&lt;</button>
+                        <button class="nav-btn go-Today" onclick="goToday()">Today</button>
+                        <button class="nav-btn next" onclick="nextMonth()">&gt;</button>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="days">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                    </div>
+                    <div class="dates"></div>
+                </div>
             </div>
         </div>
-        <div class="main">
-            <div class="days">
-                <div class="day">일</div>
-                <div class="day">월</div>
-                <div class="day">화</div>
-                <div class="day">수</div>
-                <div class="day">목</div>
-                <div class="day">금</div>
-                <div class="day">토</div>
-            </div>
-            <div class="dates"></div>
+
+        <div class="miniBox3">
+            <div class="checkBaggage">Baggage Check</div>
+            <form id="todo-form">
+                <input id="input2" type="text" placeholder="Write a To Checks and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
         </div>
     </div>
+    </div>
+
     <script src="/js/calendar.js"></script>
+    <script src="/js/todo.js"></script>
 </body>
 
 </html>

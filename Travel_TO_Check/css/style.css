@@ -10,9 +10,17 @@ body{
     align-items: center;
     min-height: 100vh;
 }
-
+.wrapper {
+    display: flex;
+}
+.left_content{
+    flex:1;
+}
+.miniBox3{
+    flex:1;
+}
 .calendar{
-    width:40%;
+    width:80%;
     margin:10px;
 }
 .header{
@@ -97,4 +105,30 @@ body{
     background-color: rgb(86, 156, 231);
     content: '';
     border-radius: 50%;
+}
+input[type="text"]{
+    width:90%;
+    text-align: center;
+    justify-content: center;
+    height:25px;
+}
+#todo-list{
+    color:beige;
+    text-shadow: 2px 2px 6px black;
+    font-size:30px;
+    text-align: center;
+    list-style: none;
+}
+.miniBox3{
+    border:5px groove rgb(86, 156, 231);
+    border-radius: 20px 20px 20px 20px;
+    margin-right:2%;
+    justify-content: center;
+    text-align:center;
+}
+.checkBaggage{
+    margin-bottom:5%;
+    margin-top:10%;
+    font-size:30px;
+    font-family: 'Gugi', cursive;
 }
