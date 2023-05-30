@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebProj</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c79338b164.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href=""><i class="fa-solid fa-suitcase-rolling"></i></a>
+                <a href="">YOUR TRIP</a>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">TOURS</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="navbar__icons">
+                <li><i class="fa-solid fa-circle-user"></i></li>
+                <li>
+                    <form class="hidden" id="login-form">
+                        <input required maxlength="15" type="text" placeholder="username">
+                        <input type="submit" value="Log In" style="width: 80px;">
+                    </form>         
+                </li>
+                <li><span id="greeting" class="hidden"></span></li>
+            </ul>
+            <a href="#" class="navbar__toogleBtn">
+                <i class="fas fa-solid fa-bars"></i>
+            </a>   
+        </nav>
+        <main class="main">
+            <div class="main__content">
+                <span>NEVER STOP<br>EXPLORING THE<br>WORLD.</span>
+            </div>
+            <ul class="main__images">
+                <li>
+                    <a href="Bangkok_todo.html">
+                        <div>
+                            <img src="css/img1.jpg">
+                            <span>Bangkok</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Bali_todo.html">
+                        <div>
+                            <img src="css/img2.jpg">
+                            <span>Bali</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Paris_todo.html">
+                        <div>
+                            <img src="css/img3.jpg">
+                            <span>Paris</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <script src="js/main.js" defer></script>
+        <script src="js/greeting.js"></script>
+    </body>
+</html>
