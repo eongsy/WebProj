@@ -62,7 +62,15 @@ new Vue({
   },
   methods: {
     submitForm() {
-      alert("카드가 등록 되었습니다!");
+      if (this.cardNumber === "" || this.cardNumber.replace(/\s/g,"").length !==16|| this.cardName === "" || this.cardMonth === "" || this.cardYear === "" || this.cardCvv === "" || this.cardCvv.replace(/\s/g, "").length !== 4) {
+        alert("모든 항목을 입력해주세요.");
+        if(this.cardNumber.replace(/\s/g,"").length !==16)
+          alert("카드번호는 16자리입니다.")
+        if(this.cardCvv.replace(/\s/g, "").length !== 4)
+          alert("CVC는 4자리입니다.")
+      } else {
+        alert('카드 등록이 완료되었습니다!\nHOME버튼을 눌러 메인페이지로 이동하세요.');
+      }
     },
     flipCard (status) {
       this.isCardFlipped = status;
@@ -87,5 +95,4 @@ new Vue({
       vm.isInputFocused = false;
     }
   }
- 
 });
