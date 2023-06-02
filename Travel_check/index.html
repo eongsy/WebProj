@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProj</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c79338b164.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href=""><i class="fa-solid fa-suitcase-rolling"></i></a>
+            <a href="">YOUR TRIP</a>
+        </div>
+        <ul class="navbar__menu">
+            <li>HOME</li>
+            <li><a href="#voyage">TOURS</a></li>
+            <li><a href="#foot_contact">BAGGAGE</a></li>
+        </ul>
+        <ul class="navbar__icons">
+            <li><i class="fa-solid fa-circle-user"></i></li>
+            <li>
+                <form class="hidden" id="login-form">
+                    <input required maxlength="15" type="text" placeholder="username">
+                    <input type="submit" value="Log In" style="width: 80px;">
+                </form>
+            </li>
+            <li><span id="greeting" class="hidden"></span></li>
+        </ul>
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fas fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <main id="voyage" class="main">
+        <div class="main__content">
+            <span>NEVER STOP<br>EXPLORING THE<br>WORLD.</span>
+        </div>
+        <ul class="main__images">
+            <li>
+                <div>
+                    <span class="price">$412</span>
+                    <img src="css/img1.jpg">
+                    <span>Bangkok</span>
+                    <button class="pay" onclick="location.href='dist/card1.html'"><i class="fa-solid fa-arrow-right"
+                            style="color:rgb(241, 234, 234);
+                    font-size:25px;"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="price">$967</span>
+                    <img src="css/img2.jpg">
+                    <span>Bali</span>
+                    <button class="pay" onclick="location.href='dist/card1.html'"><i class="fa-solid fa-arrow-right"
+                            style="color:white;
+                    font-size:25px;"></i></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="price">$1355</span>
+                    <img src="css/img3.jpg">
+                    <span>Paris</span>
+                    <button class="pay" onclick="location.href='dist/card1.html'"><i class="fa-solid fa-arrow-right"
+                            style="color:white;
+                    font-size:25px;"></i></button>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div class="whole">
+        <div class="wrapper">
+        <div class="left_content">
+            <div class="calendar">
+                <div class="header">
+                    <div class="year-month"></div>
+                    <div class="nav_move">
+                        <button class="nav-btn prev" onclick="prevMonth()">&lt;</button>
+                        <button class="nav-btn go-Today" onclick="goToday()">Today</button>
+                        <button class="nav-btn next" onclick="nextMonth()">&gt;</button>
+                    </div>
+                </div>
+                <div class="main_cal">
+                    <div class="days">
+                        <div class="day">일</div>
+                        <div class="day">월</div>
+                        <div class="day">화</div>
+                        <div class="day">수</div>
+                        <div class="day">목</div>
+                        <div class="day">금</div>
+                        <div class="day">토</div>
+                    </div>
+                    <div class="dates"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="miniBox3">
+            <div class="checkBaggage"><i class="fas fa-solid fa-list" style="color: #ffffff;"></i> Baggage Check</div>
+            <form id="todo-form">
+                <input id="input2" type="text" placeholder="Write a To Checks and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer id="foot_contact">
+        <h1>Contact</h1>
+        <div class="info_maker">
+            <div class="kim">
+            <p>
+                김범수<br>
+                010-6325-6924<br>
+                <i class="fa-brands fa-github"><a href="https://github.com/indigchi1d" target="_blank" style="color:black";> GIT</a></i>
+            </p>
+        </div>
+        <div class="won">
+            <p>
+                원서연<br>
+                010-9256-5939<br>
+                <i class="fa-brands fa-github"><a href="https://github.com/eongsy" target="_blank" style="color:black";> GIT</a></i>
+                
+            </p>
+        </div>
+        </div>
+        
+    </footer>
+    <script src="js/calendar.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/greeting.js"></script>
+</body>
+
+</html>
